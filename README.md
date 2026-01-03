@@ -405,8 +405,8 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 | Cours vidéo | ✅ | ✅ |
 | QCM séances | ✅ | ✅ Amélioré |
 | Examens blancs | ✅ | ✅ |
-| Paiement Stripe | ✅ | ✅ Amélioré |
-| Gamification | Basique | Complète |
+| Paiement Stripe | ✅ (no webhook/synchronization) | ✅ Amélioré |
+| Gamification | ❌ | Complète |
 | **Chat IA** | ❌ | ✅ |
 | **Flashcards** | ❌ | ✅ |
 | **QCM Personnel** | ❌ | ✅ |
@@ -420,7 +420,7 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 | **Notifs Marketing** | ❌ | ✅ |
 | **Bug Reporting** | ❌ | ✅ |
 | **i18n** | ❌ | ✅ |
-| **Bot Telegram** | ❌ | Optionnel |
+| **Bot Telegram** | ❌ | ✅ |
 
 ---
 
