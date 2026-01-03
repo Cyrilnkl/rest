@@ -389,9 +389,8 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 - Mode sombre
 - Préférence système
 
-#### Mobile
-- Design responsive amélioré
-- PWA (Progressive Web App) possible
+#### Mobile / Tablette
+- Design responsive amélioré -> non fourni
 
 ---
 
