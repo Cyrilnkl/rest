@@ -1,5 +1,5 @@
 # 📋 CAHIER DES CHARGES - ÉVOLUTION PLATEFORME E-LEARNING
-## Projet : Corporis Academia - De la V1 vers la V2
+## Projet : De la V1 vers la V2
 
 ---
 
@@ -7,7 +7,7 @@
 
 ## Présentation
 
-**Corporis Academia** est une plateforme e-learning dédiée aux étudiants en médecine (PASS/LASS) et Terminale. La plateforme actuelle (V1) est fonctionnelle et en production. Nous souhaitons la faire évoluer vers une V2 beaucoup plus complète.
+Plateforme e-learning dédiée aux étudiants en médecine. La plateforme actuelle (V1) est fonctionnelle. Nous souhaitons la faire évoluer vers une V2 beaucoup plus complète.
 
 ## Objectif
 
@@ -280,20 +280,9 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 #### Changement de Faculté
 - Possibilité de changer (avec limite)
 
-### 💰 Système de Crédits IA
-
-#### Crédits
-- Chaque génération IA consomme des crédits
-- Crédits inclus dans l'abonnement
-- Possibilité d'acheter des crédits supplémentaires
-
-#### Historique
-- Voir l'historique des dépenses de crédits
-- Voir le solde restant
-
 #### Parrainage
 - Code de parrainage unique
-- Gagner des crédits quand un filleul s'inscrit
+- Gagner 2€ de crédits quand un filleul s'inscrit automatiquement déduit du prochain paiement
 
 ### 📝 Éditeur de Notes Rich Text
 
@@ -305,15 +294,15 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 - Sauvegarde automatique
 
 #### Organisation
-- Notes liées aux sous-catégories de flashcards
-- Ou notes indépendantes
+- Notes liées aux sous-catégories de génération
 
 ### 🔔 Système de Notifications Avancé (Admin)
 
 #### Templates Email
-- Créer des templates d'email personnalisés
-- Variables dynamiques (nom, streak, etc.)
+- Créer des templates d'email personnalisés en no code
+- Variables dynamiques de filtre (nom, streak, nombre de jours absent, etc.)
 - Prévisualisation
+- Création de flow en no code
 
 #### Filtres Utilisateurs
 - Créer des segments (ex: "inactifs depuis 7 jours")
@@ -321,14 +310,14 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 
 #### Campagnes
 - Créer des campagnes email
-- Planifier l'envoi
+- Planifier l'envoi (récurrent, à un moment ou seulement une fois)
 - Campagnes récurrentes (hebdomadaire, etc.)
-- Statistiques (envoyés, ouverts, cliqués)
+- Statistiques (envoyés, erreurs)
 
 ### 🐛 Reporting d'Erreurs Automatique
 
 #### Côté Utilisateur
-- Capture automatique des erreurs JavaScript
+- Capture automatique des erreurs JavaScript (error boundary)
 - Envoi au serveur avec contexte (page, navigateur, etc.)
 
 #### Côté Admin
@@ -348,13 +337,13 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 ### 📋 Enquête de Satisfaction (NPS)
 
 #### Côté Utilisateur
-- Popup d'enquête après X jours d'utilisation
-- Score NPS (0-10)
+- Popup d'enquête après 5 jours d'utilisation
+- Score de satisfaction (0-10)
 - Questions ouvertes
 
 #### Côté Admin
 - Voir toutes les réponses
-- Score NPS moyen
+- Score de satisfaction moyen
 - Évolution dans le temps
 
 ### 🌐 Internationalisation
@@ -362,12 +351,13 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 #### Langues Supportées
 - Français (par défaut)
 - Anglais
-- (Extensible à d'autres langues)
+- Italien
+- Espagnol
 
 #### Traduction
 - Interface traduite
-- Questions des QCM traduites
-- Corrections traduites
+- Questions des QCM
+- Corrections
 
 ### 🤖 Bot Telegram (Optionnel)
 
@@ -388,6 +378,10 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 - Mode clair
 - Mode sombre
 - Préférence système
+
+#### Réfonte complète
+- Suppresssion de tout le CSS
+- Changement du CSS en tailwind (à installer)
 
 #### Mobile / Tablette
 - Design responsive amélioré -> non fourni
@@ -420,6 +414,7 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 | **Bug Reporting** | ❌ | ✅ |
 | **i18n** | ❌ | ✅ |
 | **Bot Telegram** | ❌ | ✅ |
+| **tailwind** | ❌ | ✅ |
 
 ---
 
@@ -427,10 +422,8 @@ Obtenir une estimation du coût et du temps de développement pour faire évolue
 
 ## Accès Fournis sur Demande
 - Accès à la V1 en production (lecture seule)
-- Documentation technique de la V1
-- Maquettes/Wireframes de la V2 (si disponibles)
+- Maquettes/Wireframes de la V2 uniquement sur ordinateur pour quelques pages (environ 40%)
 
 ## Contraintes Techniques
-- Hébergement : VPS existant (possibilité d'upgrade)
-- Budget API IA : illimité (optimisation demandé)
+- Hébergement : VPS existant
 - Délai souhaité : 9 mois
